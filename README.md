@@ -1,2 +1,3 @@
 # OneProjectPerDay
-Every day I will be uploading a project in order to improve and keep my web Web development skills sharp
+
+Personal Learning Journey where I will be uploading One or more projects per day in order to improve and sharpen my web development skillset.
