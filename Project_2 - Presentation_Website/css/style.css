@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --page-1-color: steelblue;
+  --page-2-color: tan;
+  --page-3-color: teal;
+  --page-4-color: slateblue;
+  --animate-speed: 2s;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-light {
+  background: #fff;
+  color: #333;
+}
+
+#page-1 {
+  background: var(--page-1-color);
+}
+#page-2 {
+  background: var(--page-2-color);
+}
+#page-3 {
+  background: var(--page-3-color);
+}
+#page-4 {
+  background: var(--page-4-color);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 4rem;
+}
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: heading var(--animate-speed) forwards ease-in;
+}
+
+@keyframes heading {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.page h1 {
+  padding: 1rem;
+  color: #fff;
+  font-size: 5rem;
+}
+
+.page p {
+  font-size: 1.3rem;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+#page-1 p {
+  transform: translateX(-1900px);
+  animation: paragraph var(--animate-speed) forwards ease-in;
+}
+
+@keyframes paragraph {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+div {
+  display: block;
+  margin-top: 3rem;
+}
+
+.btn {
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.next:hover {
+  background: #333;
+  color: #fff;
+}
+a.previous:hover {
+  background: #fff;
+  color: #333;
+}
